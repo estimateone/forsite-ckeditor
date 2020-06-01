@@ -1,0 +1,17 @@
+# PHP Storm
+/.idea
+
+# General Mac Things
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Other forsite repos
+/forsite-core
+/forsite-mocks
+
+# Local mount for Docker container logs and mysql data
+/.docker/logs
+/.docker/mysql-data
+/.docker/mysql

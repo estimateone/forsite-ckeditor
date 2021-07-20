@@ -46,25 +46,25 @@ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 
 // Learn more about users at https://ckeditor.com/docs/ckeditor5/latest/features/collaboration/users.html.
 
-class UsersInit {
-	static get requires() {
-		return [ 'Users' ];
-	}
+// class UsersInit {
+// 	static get requires() {
+// 		return [ 'Users' ];
+// 	}
 
-	constructor( editor ) {
-		this.editor = editor;
-	}
+// 	constructor( editor ) {
+// 		this.editor = editor;
+// 	}
 
-	init() {
-		const users = this.editor.plugins.get( 'Users' );
+// 	init() {
+// 		const users = this.editor.plugins.get( 'Users' );
 
-		users.addUser( {
-			id: 'u1'
-		} );
+// 		users.addUser( {
+// 			id: 'u1'
+// 		} );
 
-		users.defineMe( 'u1' );
-	}
-}
+// 		users.defineMe( 'u1' );
+// 	}
+// }
 
 class Editor extends DecoupledDocumentEditor {}
 
@@ -109,7 +109,7 @@ Editor.builtinPlugins = [
 	TextTransformation,
 	TrackChanges,
 	Underline,
-	UsersInit
+	// UsersInit
 ];
 
 export default Editor;

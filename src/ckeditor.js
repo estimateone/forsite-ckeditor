@@ -21,13 +21,10 @@ import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
-import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript.js';
-import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript.js';
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
-import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 
 class Editor extends DecoupledDocumentEditor {}
@@ -52,13 +49,10 @@ Editor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Strikethrough,
-	Subscript,
-	Superscript,
 	Table,
 	TableCellProperties,
 	TableProperties,
 	TableToolbar,
-	TextTransformation,
 	Underline
 ];
 

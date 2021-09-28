@@ -35,6 +35,8 @@
 			</div>
 			<div class="row row-editor">
 				<div class="editor">
+					<span class="mention">@swarley</span>
+					<span class="mention">@lilypad</span>
 					<h2>Bilingual Personality Disorder</h2>
 					<p>
 						This may be the first time you hear about this made-up disorder but
@@ -102,7 +104,16 @@
 		</p>
 	</footer>
 	<script src="../build/ckeditor.js"></script>
-	<script>DecoupledDocumentEditor
+	<script>
+		const items = [
+			{ id: '@swarley', userId: '1', name: 'Barney Stinson', isPopulated: true},
+			{ id: '@lilypad', userId: '2', name: 'Lily Aldrin', isPopulated: false},
+			{ id: '@marshmallow', userId: '3', name: 'Marshall Eriksen', isPopulated: true},
+			{ id: '@rsparkles', userId: '4', name: 'Robin Scherbatsky', isPopulated: false},
+			{ id: '@tdog', userId: '5', name: 'Ted Mosby', isPopulated: true},
+		];
+
+		DecoupledDocumentEditor
 			.create( document.querySelector( '.editor' ), {
 				
 				toolbar: {
@@ -147,7 +158,15 @@
 					]
 				},
 				licenseKey: '',
-				
+				mention: {
+					feeds: [
+						{
+							marker: '@',
+							feed: items,
+							minimumCharacters: 1
+						}
+					]
+				}
 			} )
 			.then( editor => {
 				window.editor = editor;

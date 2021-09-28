@@ -34,5 +34,8 @@
   },
   "scripts": {
     "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4"
   }
 }

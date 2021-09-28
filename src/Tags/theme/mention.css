@@ -2,3 +2,14 @@
  * Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
+.unpopulated {
+    color: black;
+    background: var(--iron-100);
+    text-decoration: underline var(--iron-300);
+}
+
+.populated {
+    color: black;
+    background: var(--west-200);
+    text-decoration: underline var(--west-400);
+}

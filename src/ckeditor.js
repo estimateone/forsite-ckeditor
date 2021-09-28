@@ -26,6 +26,7 @@ import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import { Mention } from './Tags/src';
+import './variables.css';
 
 class Editor extends DecoupledDocumentEditor {}
 

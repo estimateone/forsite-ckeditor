@@ -18,6 +18,7 @@
     "@ckeditor/ckeditor5-horizontal-line": "^30.0.0",
     "@ckeditor/ckeditor5-indent": "^30.0.0",
     "@ckeditor/ckeditor5-list": "^30.0.0",
+    "forsite-ckeditor-mentions": "estimateone/forsite-ckeditor-mentions#v1.1.1",
     "@ckeditor/ckeditor5-page-break": "^30.0.0",
     "@ckeditor/ckeditor5-paragraph": "^30.0.0",
     "@ckeditor/ckeditor5-paste-from-office": "^30.0.0",
